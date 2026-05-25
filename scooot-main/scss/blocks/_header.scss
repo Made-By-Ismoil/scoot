@@ -1,0 +1,399 @@
+.header {
+  box-shadow: rgba(252, 182, 43, 0.854) 0px 5px 15px;
+  z-index: 1111;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  background-color: $white;
+  &__container {
+    padding-top: 22px;
+    padding-bottom: 22px;
+    @include df-row-between-center;
+  }
+  &__test-button {
+    opacity: 0;
+    border: none;
+    outline: none;
+    background: none;
+    display: none;
+  }
+  &__test-button-image {
+    object-fit: cover;
+    width: 17px;
+    height: 17px;
+  }
+  &__left-box {
+    @include df-row-center-center;
+    gap: 58.18px;
+  }
+  &__logo-link {
+    transition: 200ms ease all;
+    &:active {
+      transition: 200ms ease all;
+      opacity: 0.5;
+    }
+  }
+  &__logo-image {
+    width: 107.82px;
+    height: 28.56px;
+  }
+  &__list {
+    @include df-row-center-center;
+    gap: 32px;
+  }
+  &__lists {
+  }
+  &__links {
+  }
+  &__texts {
+    font-family: "Space Mono";
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: 0px;
+    color: $dim__grey;
+  }
+  &__button {
+    @include template__button;
+  }
+  &__mb-button-box {
+    display: none !important;
+    @include df-row-center-center;
+  }
+  &__mb-open-burger-button {
+    border: none;
+    outline: none;
+    background: none;
+    display: none;
+    width: 17px;
+    height: 17px;
+  }
+  &__mb-open-burger-icon {
+    object-fit: cover;
+    width: 17px;
+    height: 17px;
+  }
+  &__mb-close-burger-button {
+    border: none;
+    outline: none;
+    background: none;
+    display: none;
+    width: 17px;
+    height: 17px;
+  }
+  &__mb-close-burger-icon {
+    object-fit: cover;
+    width: 17px;
+    height: 17px;
+  }
+  &__mb-div {
+    display: none;
+    transition: 450ms ease all;
+    z-index: -1;
+    width: 100%;
+    height: 100dvh;
+    top: 68px;
+    position: fixed;
+    transform: translateX(-100%);
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  &__mb-div.active {
+    transform: translateX(0%);
+    transition: 450ms ease all;
+  }
+  &__mb-nav {
+    @include df-column-between-start;
+    width: 80%;
+    height: 100dvh;
+    background-color: $second__dark-navy;
+    padding: 64px 32px 102px 32px;
+  }
+  &__mb-list {
+    @include df-column-start-start;
+    gap: 24px;
+  }
+  &__mb-lists {
+    @include df-column-start-start;
+    gap: 24px;
+  }
+  &__mb-links {
+  }
+  &__mb-texts {
+    font-family: "Space Mono";
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0px;
+    color: $white;
+  }
+  &__mb-button {
+    @include template__button;
+  }
+}
+@media (max-width: 1024px) {
+  .header {
+    box-shadow: rgba(252, 182, 43, 0.854) 0px 5px 15px;
+    z-index: 1111;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    background-color: $white;
+    &__container {
+      padding-top: 22px;
+      padding-bottom: 22px;
+      padding-left: 40px;
+      padding-right: 40px;
+      @include df-row-between-center;
+    }
+    &__test-button {
+      opacity: 0;
+      border: none;
+      outline: none;
+      background: none;
+      display: none;
+    }
+    &__test-button-image {
+      object-fit: cover;
+      width: 17px;
+      height: 17px;
+    }
+    &__left-box {
+      @include df-row-center-center;
+      gap: 58.18px;
+    }
+    &__logo-link {
+      transition: 200ms ease all;
+      &:active {
+        transition: 200ms ease all;
+        opacity: 0.5;
+      }
+    }
+    &__logo-image {
+      width: 107.82px;
+      height: 28.56px;
+    }
+    &__list {
+      @include df-row-center-center;
+      gap: 32px;
+    }
+    &__lists {
+    }
+    &__links {
+    }
+    &__texts {
+      font-family: "Space Mono";
+    }
+    &__button {
+      @include template__button;
+    }
+    &__mb-button-box {
+      display: none !important;
+      @include df-row-center-center;
+    }
+    &__mb-open-burger-button {
+      border: none;
+      outline: none;
+      background: none;
+      display: none;
+      width: 17px;
+      height: 17px;
+    }
+    &__mb-open-burger-icon {
+      object-fit: cover;
+      width: 17px;
+      height: 17px;
+    }
+    &__mb-close-burger-button {
+      border: none;
+      outline: none;
+      background: none;
+      display: none;
+      width: 17px;
+      height: 17px;
+    }
+    &__mb-close-burger-icon {
+      object-fit: cover;
+      width: 17px;
+      height: 17px;
+    }
+    &__mb-div {
+      display: none;
+      transition: 450ms ease all;
+      z-index: -1;
+      width: 100%;
+      height: 100dvh;
+      top: 68px;
+      position: fixed;
+      transform: translateX(-100%);
+      backdrop-filter: blur(5px);
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+    &__mb-div.active {
+      transform: translateX(0%);
+      transition: 450ms ease all;
+    }
+    &__mb-nav {
+      @include df-column-between-start;
+      width: 80%;
+      height: 100dvh;
+      background-color: $second__dark-navy;
+      padding: 64px 32px 102px 32px;
+    }
+    &__mb-list {
+      @include df-column-start-start;
+      gap: 24px;
+    }
+    &__mb-lists {
+      @include df-column-start-start;
+      gap: 24px;
+    }
+    &__mb-links {
+    }
+    &__mb-texts {
+      font-family: "Space Mono";
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 25px;
+      letter-spacing: 0px;
+      color: $white;
+    }
+    &__mb-button {
+      @include template__button;
+    }
+  }
+}
+@media (max-width: 767px) {
+  .header {
+    box-shadow: rgba(252, 182, 43, 0.854) 0px 5px 15px;
+    z-index: 1111;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    background-color: $white;
+    &__container {
+      padding-top: 22px;
+      padding-bottom: 22px;
+      padding-left: 32px;
+      padding-right: 32px;
+      @include df-row-reverse-between-center;
+    }
+    &__test-button {
+      opacity: 0;
+      border: none;
+      outline: none;
+      background: none;
+      display: block;
+    }
+    &__test-button-image {
+      object-fit: cover;
+      width: 17px;
+      height: 17px;
+    }
+    &__left-box {
+    }
+    &__logo-link {
+      transition: 200ms ease all;
+      &:active {
+        transition: 200ms ease all;
+        opacity: 0.5;
+      }
+    }
+    &__logo-image {
+      width: 75.5px;
+      height: 20px;
+    }
+    &__list {
+      display: none;
+    }
+    &__lists {
+      display: none;
+    }
+    &__links {
+      display: none;
+    }
+    &__texts {
+      display: none;
+      font-family: "Space Mono";
+    }
+    &__button {
+      display: none !important;
+      @include template__button;
+    }
+    &__mb-button-box {
+      display: block !important;
+      @include df-row-center-center;
+    }
+    &__mb-open-burger-button {
+      border: none;
+      outline: none;
+      background: none;
+      display: block;
+      width: 17px;
+      height: 17px;
+    }
+    &__mb-open-burger-icon {
+      object-fit: cover;
+      width: 17px;
+      height: 17px;
+    }
+    &__mb-close-burger-button {
+      border: none;
+      outline: none;
+      background: none;
+      display: none;
+      width: 17px;
+      height: 17px;
+    }
+    &__mb-close-burger-icon {
+      object-fit: cover;
+      width: 17px;
+      height: 17px;
+    }
+    &__mb-div {
+      display: block;
+      transition: 450ms ease all;
+      z-index: -1;
+      width: 100%;
+      height: 100dvh;
+      top: 68px;
+      position: fixed;
+      transform: translateX(-100%);
+      backdrop-filter: blur(5px);
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+    &__mb-div.active {
+      transform: translateX(0%);
+      transition: 450ms ease all;
+    }
+    &__mb-nav {
+      @include df-column-between-start;
+      width: 80%;
+      height: 100dvh;
+      background-color: $second__dark-navy;
+      padding: 64px 32px 102px 32px;
+    }
+    &__mb-list {
+      @include df-column-start-start;
+      gap: 24px;
+    }
+    &__mb-lists {
+      @include df-column-start-start;
+      gap: 24px;
+    }
+    &__mb-links {
+    }
+    &__mb-texts {
+      font-family: "Space Mono";
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 25px;
+      letter-spacing: 0px;
+      color: $white;
+    }
+    &__mb-button {
+      display: block;
+      @include template__button;
+    }
+  }
+}
